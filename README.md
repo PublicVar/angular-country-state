@@ -8,7 +8,7 @@ It based on the script written by [Shafiul Azam](https://bdhacker.wordpress.com/
 ## Installation
 
 Clone this repository. 
-After including the **angular-country-state-select.js** file on your app, inject **'angularCountryState'** as a dependency on your AngularJS module:
+After including the **angular-country-state-select.js** file in your app, inject **'angularCountryState'** as a dependency in your AngularJS module:
 
 ```
 angular
