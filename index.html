@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="demo">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo : Angular Country State Select </title>
+        <style>
+            body{
+                padding: 20px;    
+            }
+            div{
+                margin-top: 10px; 
+            }
+        </style>
+    </head>
+    <body>
+       <h1>Demo</h1>
+        <country-state-select country="myCountryModel" state="myStateModel" country-label="The country : " country-select-label="Select your country" state-label="The state : "  ></country-state-select>
+        <div class="choice">
+
+            <div>
+                Country : {{ myCountryModel }}
+            </div>
+            <div>
+                State : {{ myStateModel }}
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+        <script src="dist/angular-country-state-select.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
