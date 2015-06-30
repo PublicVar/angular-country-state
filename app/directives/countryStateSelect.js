@@ -1,14 +1,14 @@
 (function() {
     "use strict";
-    var template = '<div class="bloc-country">'
+    var template = '<div class="bloc-country form-group">'
     template += '<label for="country">{{countryLabel}}</label>';
-    template += '<select name="country" ng-change="selectCountry()" ng-model="country"  required>';
+    template += '<select name="country" ng-change="selectCountry()" ng-model="country"  required  class="form-control">';
     template +='<option ng-repeat="theCountry in countries track by $index" >{{theCountry}}</option>';
     template +='</select>';
     template +='</div>';
-    template +='<div class="bloc-state">';
+    template +='<div class="bloc-state form-group">';
     template +='<label for="state" ng-show="states">{{stateLabel}}</label>';
-    template +='<select name="state" ng-model="countryState" ng-show="states" required>';
+    template +='<select name="state" ng-model="countryState" ng-show="states" required class="form-control">';
     template +='<option ng-repeat="optStates in states track by $index" >{{optStates}}</option>';
     template +='</select>';
     template +='</div>';
