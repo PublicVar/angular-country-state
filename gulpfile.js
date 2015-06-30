@@ -12,7 +12,7 @@ gulp.task('minify-js', function(){
         .pipe(gp_sourcemaps.init())
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./dist/'))
-        .pipe(gp_rename('angular-country-state-select.js'))
+        .pipe(gp_rename('angular-country-state.js'))
         .pipe(gp_uglify())
         .pipe(gp_sourcemaps.write('./'))
         .pipe(gulp.dest('./dist/'))
