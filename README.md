@@ -3,6 +3,7 @@
 ## Description
 
 This Angularjs directive add 2 select boxes. One for selecting the country and one for the state.
+It based on the script written by [Shafiul Azam](https://bdhacker.wordpress.com/2009/11/21/adding-dropdown-country-state-list-dynamically-into-your-html-form-by-javascript/)
 
 ## Installation
 
