@@ -307,12 +307,13 @@
                     scope.selectCountry = function(){
                         var indexCountry = scope.countries.indexOf(scope.country);
                         scope.states = scope.state[indexCountry].split("|");
+                        scope.countryState = ''; 
                         if(scope.states.length == 1){
                             scope.states = new Array(scope.country);    
                         }
                         //indexCountry correspond to the "Select" label
                         if(indexCountry == 0){
-                            scope.states = new Array("");    
+                            scope.states = new Array("");   
                         }
 
                     }
