@@ -7,7 +7,7 @@ It based on the script written by [Shafiul Azam](https://bdhacker.wordpress.com/
 
 ## Installation
 
-Clone this repository. 
+Clone this repository.
 After including the **angular-country-state-select.js** file in your app, inject **'angularCountryState'** as a dependency in your AngularJS module:
 
 ```
@@ -37,3 +37,4 @@ There are some other options :
 * **country-label** : The label for the country select box. *default = "Country"*
 * **country-select-label** : The select text in the country select box. *default = "Select"*
 * **state-label** : The label for the state select box. *default = "State"*
+* **default-country** : You can change the default country
