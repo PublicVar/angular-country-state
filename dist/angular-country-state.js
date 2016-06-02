@@ -307,7 +307,7 @@
                     scope.selectCountry = function(){
                         var indexCountry = scope.countries.indexOf(scope.country);
                         scope.states = scope.state[indexCountry].split("|");
-                        
+
                         if(scope.states.length == 1){
                             scope.states = new Array(scope.country);
                         }
@@ -318,10 +318,15 @@
 
                     }
 
-                    if(typeof attrs.defaultCountry != 'undefined'){
+                    //Back compatibility for the option defaultCountry for choosing a default country.
+                    //Instead, you can use the scope.country as default value when is possible
+                    if(typeof scope.country  == 'undefined' && typeof  attrs.defaultCountry != 'undefined'){
                       scope.country = attrs.defaultCountry;
                       scope.selectCountry();
+                    } else if (typeof scope.country  != 'undefined') {
+                      scope.selectCountry();
                     }
+
 
 
                 }

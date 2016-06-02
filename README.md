@@ -37,4 +37,4 @@ There are some other options :
 * **country-label** : The label for the country select box. *default = "Country"*
 * **country-select-label** : The select text in the country select box. *default = "Select"*
 * **state-label** : The label for the state select box. *default = "State"*
-* **default-country** : You can change the default country
+* **default-country** : You can change the default country [Deprecated : if you want to set a default country, set the value in your controller]
