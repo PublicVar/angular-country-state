@@ -307,7 +307,7 @@
                     scope.selectCountry = function(){
                         var indexCountry = scope.countries.indexOf(scope.country);
                         scope.states = scope.state[indexCountry].split("|");
-                        scope.countryState = '';
+                        
                         if(scope.states.length == 1){
                             scope.states = new Array(scope.country);
                         }
