@@ -14,7 +14,7 @@
     template +='</div>';
     template +='<div class="bloc-state form-group">';
     template +='<label for="state" ng-show="states">{{stateLabel}}</label>';
-    template +='<select name="state" ng-model="countryState" ng-show="states" required class="form-control">';
+    template +='<select name="state" ng-model="countryState" ng-show="states" class="form-control">';
     template +='<option ng-repeat="optStates in states track by $index" >{{optStates}}</option>';
     template +='</select>';
     template +='</div>';

@@ -23,4 +23,4 @@ gulp.task('watch',function(){
     gulp.watch(['app/**/*.js'],['minify-js']);
 });
 
-gulp.task('default', ['minify-js','watch']);
+gulp.task('default', gulp.series('minify-js','watch'));
